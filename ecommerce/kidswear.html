@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+.card{
+    align-items: center;
+    margin-left:380px;
+}
+
+    
+        body{
+        text-align: center;
+        background-image: url("ct.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment:scroll;
+        background-color: yellow;
+     }
+
+     h2 {text-decoration: underline; 
+        color:rgb(251, 250, 252);
+        font-size:2vw; }
+      h5{color: white;}
+
+     a {color: green; }
+     
+     p {color:rgb(0, 175, 250); font-size: 1vw; }
+
+    .footer { text-align: center;
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3%;
+            background-color: rgb(11, 15, 13);
+            color: white;
+            overflow:auto;      }
+
+     .i { position: absolute;    top:1%;    left:85%;    font-size: 1vw; }
+     .img { font-size: 1vw; }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark">
+    <ul class="nav nav-pills">
+      <li class="nav-item "> <a class="nav-link"><b>FASHION STORE</b></a> </li>
+      <li class="nav-item "> <a class="nav-link active" href="home.html"><b>Home</b></a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>Category</b> </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="menswear.html"><b>MENS WEAR</b></a>
+          <a class="dropdown-item" href="womenswear.html"><b>WOMENS WEAR</b></a>
+          <a class="dropdown-item" href="kidswear.html"><b>KIDS WEAR</b></a>
+         
+        </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="signup.html"><b>Sign up</b></a></li>
+      <li class="nav-item"> <a class="nav-link" href="cart.html"><b>Cart</b></a></li>
+    </ul>
+ 
+ <br><BR>
+  <div class="cart">
+      <div class="container" >
+        <h2></h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">LOGIN</button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+              <div class="modal-body" >
+                <form>
+                  <h1><b>Login</b></h1>
+                  <label for="username"><b>Username:</b></label><br><br>
+                  <input type="text" id="username" name="username"><br><br>
+                  <label for="pwd"><b>Password:</b></label><br><br>
+                  <input type="password" id="pwd" name="pwd"><br><br>
+                  <a href="Forgot Password?">Forgot password</a><br><br>
+                  <button type="button" class="btn btn-primary">Login</button><br><br>
+                  Not a member ?
+                  <a href="signup.html"><b>Register</b></a><br><br>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+</div>
+</div>
+</div> </nav>
+
+
+
+
+<div class="container">
+  
+  <div class="card" id="tshirt" style="width:400px" style="align-content: center;">
+    <img class="card-img-top" src="https://5.imimg.com/data5/NV/CC/MY-31629260/boy-kids-party-wear-dress-500x500.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">PARTY WEAR</h4>
+      
+      <a href="#" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <br>
+  
+  <div class="card" id="tshirt" style="width:400px" style="align-content: center;">
+    <img class="card-img-top" src="https://publish-p33712-e119997.adobeaemcloud.com/content/dam/adityabirlafashionandretailprogram/categorypage/feb22/refresh/kids/trending-now/joyfukdr.jpg.transform/i296x300/image.jpeg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">ETHINIC WEAR</h4>
+      
+      <a href="#" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <br>
+
+
+
+<div class="card" id="tshirt" style="width:400px" style="align-content: center;">
+    <img class="card-img-top" src="https://publish-p33712-e119997.adobeaemcloud.com/content/dam/adityabirlafashionandretailprogram/categorypage/feb22/refresh/kids/trending-now/mini.jpg.transform/i296x300/image.jpeg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">CASUAL WEAR</h4>
+      
+      <a href="#" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" id="tshirt" style="width:400px" style="align-content: center;">
+    <img class="card-img-top" src="https://m.media-amazon.com/images/I/31Kj5XISm4L.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">NIGHT WEAR</h4>
+      
+      <a href="#" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" id="tshirt" style="width:400px" style="align-content: center;">
+    <img class="card-img-top" src="https://i.pinimg.com/originals/c6/14/d6/c614d61396466ac464d35e55ebbc27c0.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">TRADITIONAL WEAR</h4>
+      
+      <a href="#" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <br>
+
+
+
+
+
+</body>
+</html>

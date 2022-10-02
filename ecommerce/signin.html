@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+           .nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+.active{
+  background-color: green;
+
+}
+.pageactive{
+  background-color: green;
+}
+
+  .center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+          
+       body{
+        background-color: yellow;
+       }  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:wheat;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  
+  
+  body{
+    background-image: url("https://img.freepik.com/premium-photo/middle-eastern-family-shopping-carrying-shopper-bags-walking-yellow-background_568137-930.jpg?w=2000" );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+  }
+  h1.head{
+    color:rgb(0, 0, 0);
+    font-size:5vw;
+    margin-left:40%;
+   }
+   h2.head2{
+    color:rgb(4, 4, 4);
+    font-size:30px;
+    margin-left:39%;
+   }
+   form{
+    width: 50vw;
+    margin: auto;
+    color:rgb(31, 30, 30);
+   }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <ul style="text-align: center;">
+        <li><a class="active" href="testhome.html">HOME</a></li>
+        <li><a href="experiancekerala.html">SIGNIN</a></li>
+        <li><a href="contactus.html">SIGNUP</a></li>
+        <li><a href="gallery.html">CART</a></li>
+        
+        <li style="float:right"> <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div></li>
+      </ul> <br> <br>
+    <br>
+    <br>
+    
+    <h1 class="head">SIGNIN</h1> <br>
+   
+    <br>
+    
+
+    <form action="/action_page.php" class="was-validated">
+        
+          
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+          <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out all this feild.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" placeholder="Enter password" id="pwd" required>
+          <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out all this feild.</div>
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+      <div class="center">
+        <div  
+        class="pagination">
+          <a  href="#">&laquo;</a>
+          <a class="pageactive" href="home.html">1</a>
+          <a href="newregister.html">2</a>
+          <a href="signin.html">3</a>
+          <a href="contactus.html">4</a>
+          <a href="aboutus.html">5</a>
+          
+          <a href="#">&raquo;</a>
+        </div></div>
+
+
+
+
+
+
+
+
+</body>
+</html>
